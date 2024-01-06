@@ -150,7 +150,7 @@ def main(page: ft.Page):
                 Message("Gemini", "Thinking...", message_type="chat_message"))
 
             if question == ":verify":
-                question = "recognize text from the image"
+                question = "recognize text around the barcode"
                 response = model_vision.generate_content(
                     glm.Content(
                         parts=[
