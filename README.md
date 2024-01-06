@@ -27,3 +27,5 @@ pip install -r requirements.txt
     ```bash
     flet run chatbot.py
     ```
+
+   ![gemini-chat-app](https://github.com/yushulx/flet-chat-app-gemini-barcode/assets/2202306/9b4da08d-ca94-4a64-95b4-c6e5f1dfd985)
