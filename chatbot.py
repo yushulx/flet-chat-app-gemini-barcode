@@ -4,7 +4,7 @@ import pathlib
 import google.generativeai as genai
 import google.ai.generativelanguage as glm
 
-license_key = "DLS2eyJoYW5kc2hha2VDb2RlIjoiMjAwMDAxLTE2NDk4Mjk3OTI2MzUiLCJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSIsInNlc3Npb25QYXNzd29yZCI6IndTcGR6Vm05WDJrcEQ5YUoifQ=="
+license_key = "LICENSE-KEY"
 BarcodeReader.init_license(license_key)
 reader = BarcodeReader()
 
@@ -169,7 +169,10 @@ def main(page: ft.Page):
                 text = response.text
                 page.pubsub.send_all(
                     Message("Gemini", text, message_type="chat_message"))
-                print(text)
+
+                if barcode_text == None:
+                    return
+
                 text = text.replace(" ", "")
                 if text.find(barcode_text) != -1:
                     page.pubsub.send_all(
