@@ -16,11 +16,17 @@ pip install -r requirements.txt
     ```python
     genai.configure(api_key='API_KEY')
     ```
+
+    ![Gemini API key](https://github.com/yushulx/flet-chat-app-gemini-barcode/assets/2202306/a556a3dc-622f-4de0-b3d5-9067de44a5e5)
+
+    
 2. Request a [free trial license](https://www.dynamsoft.com/customer/license/trialLicense?product=dbr) for Dynamsoft Barcode Reader and replace the value of `LICENSE-KEY` in `chatbot.py`.
 
     ```python
     license_key = "LICENSE-KEY"
     ```
+
+    ![Dynamsoft Barcode Reader license key](https://github.com/yushulx/flet-chat-app-gemini-barcode/assets/2202306/59535e1a-3f8e-4711-adb0-2610476848fd)
 
 3. Run the app:
 
